@@ -1,0 +1,53 @@
+<div class="col">
+  <div class="bg-dark dflex flex-column flex-shrink-0 text-white px-4 py-4 bar">
+    <a href="" class="d-flex justify-content-center align-items-center text-white text-decoration-none">
+      <i class="fas fa-user-shield"></i>
+      <span class="fs-4"> &nbsp; Administrator</span>
+    </a>
+    <hr />
+    <div>
+      <h5><i class="fas fa-chevron-right"></i>&nbsp; Profile Manager</h5>
+      <div class="px-3 py-2">
+        <h6><a routerLink="user"  class="text-decoration-none text-white">User Manager</a></h6>
+      </div>
+      <div class="px-3 py-2">
+        <h6><a href="#" class="text-decoration-none text-white">Role Manager</a></h6>
+      </div>
+    </div>
+    <div>
+      <h5><i class="fas fa-chevron-right"></i>&nbsp; Shop Manager</h5>
+      <div class="px-3 py-2">
+        <h6><a href="#" class="text-decoration-none text-white">Category I</a></h6>
+      </div>
+      <div class="px-3 py-2">
+        <h6><a href="#" class="text-decoration-none text-white">Category II</a></h6>
+      </div>
+      <div class="px-3 py-2">
+        <h6><a href="#" class="text-decoration-none text-white">Products</a></h6>
+      </div>
+    </div>
+    <div>
+      <h5><i class="fas fa-chevron-right"></i>&nbsp; Static pages</h5>
+      <div class="px-3 py-2">
+        <h6><a routerLink="login" class="text-decoration-none text-white">Login</a></h6>
+      </div>
+      <div class="px-3 py-2">
+        <h6 (click)="logout()" class="text-decoration-none text-white" style="cursor: pointer;">Logout  </h6>
+      </div>
+    </div>
+    <hr>
+   <span *ngIf="user$|async as userr">
+      Hello {{userr.email}}
+    </span>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Role</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let user of users">
+    <tr>
+      <td routerLink="{{user.id}}">{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.role }}</td>
+      <!-- <app-user-items [user]="item"></app-user-items> -->
+    </tr>
+  </tbody>
+</table>

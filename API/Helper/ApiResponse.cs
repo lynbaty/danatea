@@ -1,0 +1,26 @@
+namespace API.Helper
+{
+    public class ApiResponse
+    {
+        public ApiResponse(int statusCode, string messenger = null)
+        {
+            StatusCode = statusCode;
+            Messenger = messenger ?? DefaultMessengerForStatus(statusCode);
+        }
+
+        public int StatusCode { get; set; }
+        public string Messenger { get; set; }
+        private string DefaultMessengerForStatus(int statusCode)
+        {
+            return statusCode switch
+            {
+                404 => "Not found page you want",
+                401 => "You must authentication",
+                500 => "Server is error by Client",
+                400 => "Bad request, so regret",
+                _ => null
+            };
+        }
+
+    }
+}
