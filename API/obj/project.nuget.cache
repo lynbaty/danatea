@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+UosBE6LMgEbMa2TqB7Omau2wWbRvyjFtg3gqzOIdLKcXQrJjTYAnyJHiJSJe6se2tn/ovJWjHvemKxZQXsSwg==",
+  "dgSpecHash": "ZD6MlNb0twEZQSM4ercJbhlrUrHUMcQq2mhDRNIIQqnoejLfDSNhPvD/1RzCkM6FC+jV+DyiD3ru0VBap7hBfQ==",
   "success": true,
-  "projectFilePath": "D:\\Danatea\\api\\API.csproj",
+  "projectFilePath": "D:\\Danatea\\danatea\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\boank\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

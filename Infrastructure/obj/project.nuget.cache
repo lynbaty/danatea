@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rnZCwDjd8vBRClW2HjLP2GXW4MHxeoFR+KIwdRNImxAdkFpLNCHDbJEVQimGLtONDX5Hd6cZW1M/Wl1x3QYQtQ==",
+  "dgSpecHash": "qd0fonG+UWSW/PcRvY5eN8ActLgpcQPezuU9D9fMi7VdGopTIEaOsjKgHCwIH04YHGCxxHWBqpHAwF82/96YNw==",
   "success": true,
-  "projectFilePath": "D:\\Danatea\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "D:\\Danatea\\danatea\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\boank\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

@@ -1733,11 +1733,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Danatea\\Core\\Core.csproj",
+      "projectUniqueName": "D:\\Danatea\\danatea\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "d:\\Danatea\\Core\\Core.csproj",
+      "projectPath": "D:\\Danatea\\danatea\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\boank\\.nuget\\packages\\",
-      "outputPath": "d:\\Danatea\\Core\\obj\\",
+      "outputPath": "D:\\Danatea\\danatea\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\boank\\AppData\\Roaming\\NuGet\\NuGet.Config",

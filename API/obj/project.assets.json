@@ -8479,11 +8479,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Danatea\\API\\API.csproj",
+      "projectUniqueName": "D:\\Danatea\\danatea\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Danatea\\API\\API.csproj",
+      "projectPath": "D:\\Danatea\\danatea\\api\\API.csproj",
       "packagesPath": "C:\\Users\\boank\\.nuget\\packages\\",
-      "outputPath": "D:\\Danatea\\API\\obj\\",
+      "outputPath": "D:\\Danatea\\danatea\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\boank\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8500,8 +8500,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Danatea\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Danatea\\Infrastructure\\Infrastructure.csproj"
+            "D:\\Danatea\\danatea\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Danatea\\danatea\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

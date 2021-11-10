@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y56a5hH+Jt6witwgBpy+2l8cO8Rjl6LQKWuvS5JpWMR+B4RmJwcKcKlX15obU4yRaadbPGggTgMVX/WAaqqTKg==",
+  "dgSpecHash": "YcGAtz8/RpN/+/JC6w/v4kXdOVeCd077XJsRVPIgZyk1FSggqR3ZSIJEHeaxJH7ts+A/V+6V7ygS/+8cMdzvow==",
   "success": true,
-  "projectFilePath": "D:\\Danatea\\Core\\Core.csproj",
+  "projectFilePath": "D:\\Danatea\\danatea\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\boank\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Danatea\\api\\API.csproj": {}
+    "D:\\Danatea\\danatea\\api\\API.csproj": {}
   },
   "projects": {
-    "D:\\Danatea\\api\\API.csproj": {
+    "D:\\Danatea\\danatea\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Danatea\\api\\API.csproj",
+        "projectUniqueName": "D:\\Danatea\\danatea\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Danatea\\api\\API.csproj",
+        "projectPath": "D:\\Danatea\\danatea\\api\\API.csproj",
         "packagesPath": "C:\\Users\\boank\\.nuget\\packages\\",
-        "outputPath": "D:\\Danatea\\api\\obj\\",
+        "outputPath": "D:\\Danatea\\danatea\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\boank\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Danatea\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\Danatea\\Infrastructure\\Infrastructure.csproj"
+              "D:\\Danatea\\danatea\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Danatea\\danatea\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "D:\\Danatea\\Core\\Core.csproj": {
+    "D:\\Danatea\\danatea\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Danatea\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\Danatea\\danatea\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "D:\\Danatea\\Core\\Core.csproj",
+        "projectPath": "D:\\Danatea\\danatea\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\boank\\.nuget\\packages\\",
-        "outputPath": "D:\\Danatea\\Core\\obj\\",
+        "outputPath": "D:\\Danatea\\danatea\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\boank\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -159,14 +159,14 @@
         }
       }
     },
-    "D:\\Danatea\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\Danatea\\danatea\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Danatea\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\Danatea\\danatea\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\Danatea\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "D:\\Danatea\\danatea\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\boank\\.nuget\\packages\\",
-        "outputPath": "D:\\Danatea\\Infrastructure\\obj\\",
+        "outputPath": "D:\\Danatea\\danatea\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\boank\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -183,8 +183,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Danatea\\Core\\Core.csproj": {
-                "projectPath": "D:\\Danatea\\Core\\Core.csproj"
+              "D:\\Danatea\\danatea\\Core\\Core.csproj": {
+                "projectPath": "D:\\Danatea\\danatea\\Core\\Core.csproj"
               }
             }
           }
