@@ -1,26 +1,52 @@
-<div class="container login">
-  <div  class="row justify-content-center align-items-center">
-      <div class="col-md-12">
-          <div class="col-md-12">
-              <form class="form" [formGroup]="loginForm" (submit)="onSubmit()">
-                  <h3 class="text-center text-white">Login</h3>
-                  <div class="form-group py-2">
-                    <label class="text-white">Email</label>
-                    <input type="text" class="form-control" formControlName="email" placeholder="email">
-                 </div>
-                 <div class="form-group py-2">
-                    <label class="text-white">Password</label>
-                    <input type="password" class="form-control" formControlName="password" placeholder="Password">
-                 </div>
-                  <div class="form-group py-2">
-                      <label for="remember-me" class="text-white pb-2"><span>Remember me</span> <span><input formControlName="remember" id="remember" name="remember" type="checkbox"></span></label><br>
-                      <button class="btn btn-outline-light btn-md" type="submit">Submit</button>
-                  </div>
-                  <div id="register-link" class="text-right pt-2">
-                      <a href="#" class="text-light">Register here</a>
-                  </div>
-              </form>
+<div class="z-0  flex justify-center h-full bg-grey">
+  <div class="absolute w-100 top-1/4">
+    <div class="ml-5">
+      <h1 class="uppercase text-2xl font-semibold text-gray-600 font-mono">
+        IT’S GREAT TO SEE YOU!
+      </h1>
+      <h4 class="uppercase text-md font-semibold font-sans text-primary-100">
+        LOGIN HERE
+      </h4>
+    </div>
+    <div class="rounded-md bg-white p-5 shadow-md mt-8">
+      <form [formGroup]="loginForm" (submit)="onSubmit()">
+        <div>
+          <label class="text-gray-600 font-semibold text-sm capitalize">Email</label>
+          <input formControlName="email" placeholder="abc@gmail.com" class="formcontrol" />
+        </div>
+        <div>
+          <label class="text-gray-600 font-semibold text-sm capitalize">Password</label>
+          <div class="relative">
+            <input formControlName="password" placeholder="*****" id="showpass" class="formcontrol" type="password" />
+            <svg id="eye" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer h-4 w-4 eyeposition" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
           </div>
-      </div>
+        </div>
+
+        <div class="mt-2 flex items-center justify-between">
+          <label for="remember-me" class="text-primary-100 pb-2 uppercase flex items-center">
+              <input class="rounded w-5 h-5 mr-2" formControlName="remember" id="remember" name="remember" type="checkbox">
+              <span>Remember me?</span>
+          </label>
+          <button type="submit" class="
+          cursor-pointer
+          rounded-full
+          text-white
+          uppercase
+          bg-primary-100
+          hover:bg-primary-200 hover:shadow-md
+          px-4
+          py-2
+          text-sm
+          font-semibold
+        ">Login</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>

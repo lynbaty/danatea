@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using API.Dtos.Store;
 using AutoMapper;
 using Core.Entities.Store;
 using Core.Interfaces;
+using Dtos.Store;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers

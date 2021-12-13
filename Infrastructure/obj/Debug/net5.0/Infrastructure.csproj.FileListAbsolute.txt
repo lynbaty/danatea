@@ -29,8 +29,10 @@ D:\Danatea\danatea\Infrastructure\obj\Debug\net5.0\Infrastructure.GeneratedMSBui
 D:\Danatea\danatea\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfoInputs.cache
 D:\Danatea\danatea\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfo.cs
 D:\Danatea\danatea\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CoreCompileInputs.cache
-D:\Danatea\danatea\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CopyComplete
 D:\Danatea\danatea\Infrastructure\obj\Debug\net5.0\Infrastructure.dll
 D:\Danatea\danatea\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
 D:\Danatea\danatea\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb
 D:\Danatea\danatea\Infrastructure\obj\Debug\net5.0\Infrastructure.genruntimeconfig.cache
+D:\Danatea\danatea\Infrastructure\bin\Debug\net5.0\Dtos.dll
+D:\Danatea\danatea\Infrastructure\bin\Debug\net5.0\Dtos.pdb
+D:\Danatea\danatea\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CopyComplete

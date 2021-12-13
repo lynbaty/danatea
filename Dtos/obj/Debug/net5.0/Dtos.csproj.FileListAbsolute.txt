@@ -1,0 +1,12 @@
+D:\Danatea\danatea\Dtos\obj\Debug\net5.0\Dtos.csproj.AssemblyReference.cache
+D:\Danatea\danatea\Dtos\obj\Debug\net5.0\Dtos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Danatea\danatea\Dtos\obj\Debug\net5.0\Dtos.AssemblyInfoInputs.cache
+D:\Danatea\danatea\Dtos\obj\Debug\net5.0\Dtos.AssemblyInfo.cs
+D:\Danatea\danatea\Dtos\obj\Debug\net5.0\Dtos.csproj.CoreCompileInputs.cache
+D:\Danatea\danatea\Dtos\bin\Debug\net5.0\Dtos.deps.json
+D:\Danatea\danatea\Dtos\bin\Debug\net5.0\Dtos.dll
+D:\Danatea\danatea\Dtos\bin\Debug\net5.0\ref\Dtos.dll
+D:\Danatea\danatea\Dtos\bin\Debug\net5.0\Dtos.pdb
+D:\Danatea\danatea\Dtos\obj\Debug\net5.0\Dtos.dll
+D:\Danatea\danatea\Dtos\obj\Debug\net5.0\ref\Dtos.dll
+D:\Danatea\danatea\Dtos\obj\Debug\net5.0\Dtos.pdb

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using API.Dtos.Identity;
 using API.Helper;
 using AutoMapper;
 using Core.Entities.Identity;
 using Core.Interfaces;
+using Dtos.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

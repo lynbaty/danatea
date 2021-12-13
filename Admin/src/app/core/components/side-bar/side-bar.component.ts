@@ -19,9 +19,7 @@ export class SideBarComponent implements OnInit {
     this.checkUser();
   }
 
-  logout(){
-    this.accountService.logout();
-  }
+
   checkUser(){
     var token = localStorage.getItem('Token');
     if(token != null)

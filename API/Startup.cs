@@ -8,6 +8,7 @@ using API.Helper;
 using Core.Entities.Identity;
 using Core.Interfaces;
 using Core.Interfaces.IServices;
+using Core.Interfaces.Query;
 using FluentValidation;
 using Infrastructure.Data;
 using Infrastructure.Repo;
@@ -53,6 +54,7 @@ namespace API
             services.AddSingleton<IEmailSender,EmailService>();
             services.AddValidatorsFromAssemblyContaining<LoginValidator>();
             services.AddTransient<ITokenService, TokenService>();
+            services.AddScoped<IImageQuery,ImageQuery>();
             services.AddAuthentication(options => {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;

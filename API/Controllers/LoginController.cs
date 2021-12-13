@@ -1,10 +1,10 @@
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using API.Dtos.Identity;
 using API.Helper;
 using Core.Entities.Identity;
 using Core.Interfaces.IServices;
+using Dtos.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;

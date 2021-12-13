@@ -1,4 +1,7 @@
-@import "~bootstrap/dist/css/bootstrap.css";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+// @import "~bootstrap/dist/css/bootstrap.css";
 /*!
  * Start Bootstrap - SB Admin 2 v4.1.3 (https://startbootstrap.com/theme/sb-admin-2)
  * Copyright 2013-2021 Start Bootstrap
@@ -14,4 +17,12 @@
 *{
   margin: 0px;
   padding: 0px;
+}
+
+.formcontrol{
+  @apply text-sm my-3 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow;
+}
+
+.eyeposition{
+  @apply absolute top-1/2 right-0.5  transform -translate-x-1/2 -translate-y-1/2;
 }

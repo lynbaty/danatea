@@ -1,8 +1,8 @@
-using API.Dtos.Identity;
-using API.Dtos.Store;
 using AutoMapper;
 using Core.Entities.Identity;
 using Core.Entities.Store;
+using Dtos.Identity;
+using Dtos.Store;
 using Microsoft.AspNetCore.Identity;
 
 namespace API.Helper

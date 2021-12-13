@@ -9,6 +9,7 @@ import { ShareModule } from '../share/share.module';
 
 
 
+
 @NgModule({
   declarations: [
     UserComponent,
@@ -19,6 +20,7 @@ import { ShareModule } from '../share/share.module';
     CommonModule,
     UserRoutingModule,
     ShareModule
+
   ],
   exports:[
     UserComponent,

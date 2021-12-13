@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ZD6MlNb0twEZQSM4ercJbhlrUrHUMcQq2mhDRNIIQqnoejLfDSNhPvD/1RzCkM6FC+jV+DyiD3ru0VBap7hBfQ==",
+  "dgSpecHash": "UtLiQ0Tuf1bAxSIITk0ApUaD75BE9zVeLnSRGjbWjfXQ4nsZN/NeT+sURp/svAWnuuaT/YwIfltaJu81ieZK0Q==",
   "success": true,
-  "projectFilePath": "D:\\Danatea\\danatea\\api\\API.csproj",
+  "projectFilePath": "D:\\Danatea\\danatea\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\boank\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\boank\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\fluentvalidation\\10.3.4\\fluentvalidation.10.3.4.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.4\\fluentvalidation.dependencyinjectionextensions.10.3.4.nupkg.sha512",
+    "C:\\Users\\boank\\.nuget\\packages\\fluentvalidator\\2.0.4\\fluentvalidator.2.0.4.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\mailjet.api\\2.0.2\\mailjet.api.2.0.2.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

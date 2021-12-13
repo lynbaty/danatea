@@ -29,6 +29,15 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "Dapper/2.0.123": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {}
+        }
+      },
       "FluentValidation/10.3.4": {
         "type": "package",
         "compile": {
@@ -49,6 +58,18 @@
         },
         "runtime": {
           "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
+      "FluentValidator/2.0.4": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -2603,6 +2624,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Dtos": "1.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.11",
           "Microsoft.EntityFrameworkCore": "5.0.11"
@@ -2614,11 +2636,26 @@
           "bin/placeholder/Core.dll": {}
         }
       },
+      "Dtos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FluentValidation": "10.3.4",
+          "FluentValidator": "2.0.4"
+        },
+        "compile": {
+          "bin/placeholder/Dtos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dtos.dll": {}
+        }
+      },
       "Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Core": "1.0.0",
+          "Dapper": "2.0.123",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.11"
@@ -2662,6 +2699,24 @@
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
       ]
     },
+    "Dapper/2.0.123": {
+      "sha512": "RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+      "type": "package",
+      "path": "dapper/2.0.123",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.0.123.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
     "FluentValidation/10.3.4": {
       "sha512": "hsGRtnhTlCrRbxIOkKp6rCBtkq3UV0i31ckcJtd5j1i99zqLgbQGcbxK0SMU63DIto94f++uIdRpoycu8ySnDQ==",
       "type": "package",
@@ -2694,6 +2749,18 @@
         "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
         "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
         "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
+    "FluentValidator/2.0.4": {
+      "sha512": "px1HWHYBD20PuCUgz/mEl/QcBsikW5nbdtR5whllwMIyJ4FJs03nGXe5ocHEre/x3CX72hJBnX7bteqkZwlcfA==",
+      "type": "package",
+      "path": "fluentvalidator/2.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidator.2.0.4.nupkg.sha512",
+        "fluentvalidator.nuspec",
+        "lib/netstandard1.3/FluentValidator.dll"
       ]
     },
     "Humanizer.Core/2.8.26": {
@@ -8456,6 +8523,11 @@
       "path": "../Core/Core.csproj",
       "msbuildProject": "../Core/Core.csproj"
     },
+    "Dtos/1.0.0": {
+      "type": "project",
+      "path": "../Dtos/Dtos.csproj",
+      "msbuildProject": "../Dtos/Dtos.csproj"
+    },
     "Infrastructure/1.0.0": {
       "type": "project",
       "path": "../Infrastructure/Infrastructure.csproj",
@@ -8479,11 +8551,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Danatea\\danatea\\api\\API.csproj",
+      "projectUniqueName": "D:\\Danatea\\danatea\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Danatea\\danatea\\api\\API.csproj",
+      "projectPath": "D:\\Danatea\\danatea\\API\\API.csproj",
       "packagesPath": "C:\\Users\\boank\\.nuget\\packages\\",
-      "outputPath": "D:\\Danatea\\danatea\\api\\obj\\",
+      "outputPath": "D:\\Danatea\\danatea\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\boank\\AppData\\Roaming\\NuGet\\NuGet.Config",
