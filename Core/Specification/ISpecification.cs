@@ -11,6 +11,8 @@ namespace Core.Specification
         List<Expression<Func<T,Object>>> Includes {get;}
         Expression<Func<T,Object>> Orderby {get;}
         Expression<Func<T,Object>> OrderbyDesc {get; }
+        Expression<Func<T,bool>> Ladder {get; }
+        Expression<Func<T,bool>> Search {get; }
     }
 
 }

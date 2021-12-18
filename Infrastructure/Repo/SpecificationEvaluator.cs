@@ -29,6 +29,14 @@ namespace Infrastructure.Repo
             {
                 query = query.OrderByDescending(spec.OrderbyDesc);
             }
+            if(spec.Ladder != null)
+            {
+                query = query.Where(spec.Ladder);
+            }
+             if(spec.Search != null)
+            {
+                query = query.Where(spec.Search);
+            }
             return query;
         }
     }

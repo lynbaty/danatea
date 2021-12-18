@@ -1,0 +1,8 @@
+.validField {
+    border-color: rgb(98, 121, 76);
+}
+
+.invalidField {
+    background-color: rgb(167, 54, 34);
+    outline: red;
+}

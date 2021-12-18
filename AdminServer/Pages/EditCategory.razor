@@ -1,0 +1,50 @@
+@page "/editcategory/{Id:int}"
+
+@inject HttpClient httpClient
+@inject NavigationManager navigationManager
+
+<div class="grid grid-cols-3">
+    <div>
+    <EditForm Model="@category" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+        <div>
+            <label for="name">Name</label>
+            <InputText id="name" @bind-Value="@category.Name" class="form-bl mt-3" placeholder="name" />
+            <ValidationMessage For="@(() => category.Name)" />
+        </div>
+        <div class="py-2">
+            <label for="sortorder">SortOrder</label>
+            <InputNumber @bind-Value="@category.SortOrder" class="form-bl mt-3"/>
+            <ValidationMessage For="@(() => category.SortOrder)" />
+        </div>
+        <div>
+            <label for="ishome">IsHome</label>
+            <InputCheckbox @bind-Value="@category.IsHome"/>
+            <ValidationMessage For="@(() => category.IsHome)" />
+        </div>
+        <button type="submit" class="btn bg-gray-100 text-gray-600 hover:bg-gray-700 hover:text-white">Submit</button>
+    </EditForm>
+    </div>
+</div>
+
+
+
+@code {
+    [Parameter]
+    public int Id {set;get;}
+    public CategoryDto category = new CategoryDto();
+
+     protected override async Task OnInitializedAsync()
+    {
+        category = await httpClient.GetFromJsonAsync<CategoryDto>($"category/{Id}");
+    }
+    public async Task HandleValidSubmit()
+    {
+        category.Id = Id;
+        var rs = await httpClient.PutAsJsonAsync("category",category);
+        if(rs.IsSuccessStatusCode){
+            navigationManager.NavigateTo("/category");
+        }
+    }
+}

@@ -21,8 +21,8 @@ namespace Core.Specification
                 case "name":
                 AddOrderby(p => p.Name);
                 break;
-                case "nameDesc":
-                AddOrderbyDesc(p => p.Name);
+                case "dateCreated":
+                AddOrderbyDesc(p => p.DateCreated);
                 break;
                 default:
                 AddOrderby(p => p.Name);

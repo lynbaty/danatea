@@ -1,0 +1,16 @@
+
+
+@if(show){
+    <div class="bg-green-100 text-green-700 py-3 px-4 w-full">
+        <p>@messenger</p>
+    </div>
+}
+
+
+@code {
+    [Parameter]
+    public string messenger {set; get;}
+
+    [Parameter]
+    public bool show {set; get;}
+}

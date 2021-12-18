@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using API.Dtos.Identity.Validators;
 using API.Helper;
+using Application;
 using Core.Entities.Identity;
 using Core.Interfaces;
 using Core.Interfaces.IServices;
 using Core.Interfaces.Query;
+using Dtos.Identity.Validators;
 using FluentValidation;
 using Infrastructure.Data;
 using Infrastructure.Repo;
 using Infrastructure.Services;
+using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -55,6 +57,7 @@ namespace API
             services.AddValidatorsFromAssemblyContaining<LoginValidator>();
             services.AddTransient<ITokenService, TokenService>();
             services.AddScoped<IImageQuery,ImageQuery>();
+            services.AddMediatR(typeof(MediatRApplication).Assembly);
             services.AddAuthentication(options => {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;

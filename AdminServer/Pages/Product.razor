@@ -1,0 +1,81 @@
+@page "/Product"
+
+
+@if (Products == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="bg-white p-8 rounded-md w-full">
+	<div class=" flex items-center justify-between pb-6">
+		<div>
+			<h2 class="text-gray-600 font-semibold">Product List</h2>
+			<span class="text-xs">All product item</span>
+		</div>
+		<div class="flex items-center justify-between">
+			<div class="flex bg-gray-50 items-center p-2 rounded-md">
+				<input class="bg-gray-50 outline-none ml-1 block " type="text" name="" id="" placeholder="search...">
+          </div>
+				<div class="lg:ml-40 ml-10 space-x-8">
+					<a href="createproduct" class="bg-green-600 px-4 text-white btn">Create</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
+				<div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
+					<table class="min-w-full leading-normal">
+						<thead>
+							<tr>
+								<th
+									class="tb-header">
+									Id
+								</th>
+								<th
+									class="tb-header">
+									Name
+								</th>
+								<th
+									class="tb-header">
+									Description
+								</th>
+								<th
+									class="tb-header">
+									DateCreated
+								</th>
+								<th
+									class="tb-header">
+									Price
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							 @foreach (var product in Products)
+                                {
+                                    <tr>
+                                        <td class="tb-line">
+                                            <p class="text-gray-900 whitespace-no-wrap">@product.Id</p>
+                                        </td>
+                                        <td class="tb-line">
+                                            <p class="text-gray-900 whitespace-no-wrap">@product.Name</p>
+                                        </td>
+                                        <td class="tb-line">
+                                            <p class="text-gray-900 whitespace-no-wrap">@product.Description</p>
+                                        </td>
+                                        <td class="tb-line">
+                                            <p class="text-gray-900 whitespace-no-wrap">@product.DateCreated</p>
+                                        </td>
+                                        <td class="tb-line">
+                                            <p class="text-gray-900 whitespace-no-wrap">@product.Price</p>
+                                        </td>
+                                    </tr>
+                                }
+                        </tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+}
+

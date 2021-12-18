@@ -22,6 +22,10 @@ namespace Core.Specification
 
         public Expression<Func<T, object>> OrderbyDesc {get; private set;}
 
+        public Expression<Func<T, bool>> Ladder  {get; private set;}
+
+        public Expression<Func<T, bool>> Search {get; private set;}
+
         protected void AddInclude(Expression<Func<T, object>> includeExpression)
         {
             Includes.Add(includeExpression);
@@ -33,6 +37,14 @@ namespace Core.Specification
         protected void AddOrderbyDesc(Expression<Func<T, object>> OrderbyDescExpression)
         {
             OrderbyDesc = OrderbyDescExpression;
+        }
+        protected void AddLadder(Expression<Func<T, bool>> LadderExpression)
+        {
+            Ladder = LadderExpression;
+        }
+        protected void AddSearch(Expression<Func<T, bool>> SearchExpression)
+        {
+            Search = SearchExpression;
         }
     }
 }

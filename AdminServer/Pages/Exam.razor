@@ -1,0 +1,60 @@
+@* @page "/exam"
+@using Services
+
+@inject NavigationManager navigationManager
+
+<h3 class="font-bold text-red-700 text-lg">Form Example</h3>
+
+<div class="grid grid-cols-3">
+    <div>
+        <EditForm Model="@RegisterDto" OnSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator />
+            <div>
+                <label for="name">Name</label>
+                <InputText id="name" @bind-Value="@RegisterDto.Name" class="form-bl mt-3" placeholder="name" />
+                <ValidationMessage For="@(() => RegisterDto.Name)" />
+            </div>
+            <div>
+                <label for="ConfirmPassword">Password</label>
+                <InputText id="ConfirmPassword" @bind-Value="@RegisterDto.Password" type="password" class="form-bl mt-3"
+                    placeholder="***" />
+                <ValidationMessage For="@(() => RegisterDto.Password)" />
+            </div>
+            <div>
+                <label for="ConfirmPassword">ComfirmPassword</label>
+                <InputText id="ConfirmPassword" @bind-Value="@RegisterDto.ConfirmPassword" type="password"
+                    class="form-bl mt-3" placeholder="***" />
+                <ValidationMessage For="@(() => RegisterDto.ConfirmPassword)" />
+            </div>
+            <div>
+                <label for="Email">Email</label>
+                <InputText id="Email" @bind-Value="@RegisterDto.Email" class="form-bl mt-3" placeholder="Email" />
+                <ValidationMessage For="@(() => RegisterDto.Email)" />
+            </div>
+            <button type="submit"
+                class="btn mx-3 bg-green-600 hover:bg-green-700 hover:text-white hover:shadow-sm">Submit</button>
+        </EditForm>
+    </div>
+
+</div>
+
+
+@if (show)
+{
+    <h3>Your name is @RegisterDto.Name</h3>
+    <h3>Your password is @RegisterDto.Password</h3>
+    <h3>Your name is @RegisterDto.Email</h3>
+}
+@code {
+    public RegisterDto RegisterDto = new RegisterDto();
+    public bool show { set; get; } = false;
+    private bool arlet = false;
+
+    private void HandleValidSubmit()
+    {
+        show = true;
+        RegisterDto = new RegisterDto();
+        arlet = true;
+    }
+
+} *@

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UtLiQ0Tuf1bAxSIITk0ApUaD75BE9zVeLnSRGjbWjfXQ4nsZN/NeT+sURp/svAWnuuaT/YwIfltaJu81ieZK0Q==",
+  "dgSpecHash": "RRAPTE/9X2HSC7hEGP9+PkE2XNmIxJ92THYAVabwmAtoib+/0QgzGeiEppZTKwuKLErG79dgqHMcAWhoxFbI6A==",
   "success": true,
   "projectFilePath": "D:\\Danatea\\danatea\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,8 @@
     "C:\\Users\\boank\\.nuget\\packages\\fluentvalidator\\2.0.4\\fluentvalidator.2.0.4.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\mailjet.api\\2.0.2\\mailjet.api.2.0.2.nupkg.sha512",
+    "C:\\Users\\boank\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\boank\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\boank\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",

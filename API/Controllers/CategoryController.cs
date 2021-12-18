@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Core.Entities.Store;
 using Core.Interfaces;
+using Core.Specification;
 using Dtos.Store;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,9 +20,16 @@ namespace API.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet]
+        [HttpGet("all")]
         public async Task<ActionResult<IReadOnlyList<Category>>> GetAll(){
             var rs = await _unitOfWork.Repository<Category>().GetAllAsync();
+            return Ok(_mapper.Map<IReadOnlyList<CategoryDto>>(rs));
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IReadOnlyList<Category>>> GetAllSpec([FromQuery]CategoryRequestDto request){
+            var spec = new CategoryParentwithSearchSpecification(request);
+            var rs = await _unitOfWork.Repository<Category>().GetAllSpecAsync(spec);
             return Ok(_mapper.Map<IReadOnlyList<CategoryDto>>(rs));
         }
 

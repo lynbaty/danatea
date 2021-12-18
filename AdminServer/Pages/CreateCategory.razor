@@ -1,0 +1,67 @@
+@page "/createcategory"
+
+@inject HttpClient httpClient
+@inject NavigationManager navigationManager
+
+<Dialogxx messenger="@messenger" show="@isInvisible"></Dialogxx>
+<div class="grid grid-cols-3">
+    <div>
+    <EditForm Model="@category" OnValidSubmit=HandleValidSubmit>
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+        <div>
+            <label for="name">Name</label>
+            <InputText id="name" @bind-Value="@category.Name" class="form-bl mt-3" placeholder="name" />
+            <ValidationMessage For="@(() => category.Name)" />
+        </div>
+        <div class="py-2">
+            <label for="sortorder">SortOrder</label>
+            <InputNumber @bind-Value="@category.SortOrder" class="form-bl mt-3"/>
+            <ValidationMessage For="@(() => category.SortOrder)" />
+        </div>
+        <div>
+            <label for="ishome">IsHome</label>
+            <InputCheckbox @bind-Value="@category.IsHome"/>
+            <ValidationMessage For="@(() => category.IsHome)" />
+        </div>
+            <InputSelect @bind-Value="@category.ParentId" class="bg-gray-300 rounded-md border-1 border-gray-800 px-3 py-2 pr-2" >
+                <option value="">--choose parent category--</option>
+                @if(Categories!=null){
+                    @foreach (var cate in Categories)
+                    {
+                        <option value="@cate.Id">@cate.Name</option>
+                    }
+                }
+            </InputSelect>
+        <button type="submit" class="btn bg-gray-100 text-gray-600 hover:bg-gray-700 hover:text-white">Submit</button>
+    </EditForm>
+    </div>
+</div>
+
+
+
+@code {
+    public CategoryDto category = new CategoryDto();
+
+    private IReadOnlyList<CategoryDto> Categories { get; set; }
+
+    private string messenger {set; get;}
+
+    public bool isInvisible = false;
+
+     protected override async Task OnInitializedAsync()
+    {
+        Categories = await httpClient.GetFromJsonAsync<IReadOnlyList<CategoryDto>>("category");
+    }
+    public async Task HandleValidSubmit(EditContext context)
+    {
+        var rs = await httpClient.PostAsJsonAsync("category",category);
+        if(rs.IsSuccessStatusCode){
+            messenger="Created successfully";
+            isInvisible= true;
+            navigationManager.NavigateTo("/category");
+        }
+        messenger = "Have a error, please try again";
+        isInvisible= true;
+    }
+}
